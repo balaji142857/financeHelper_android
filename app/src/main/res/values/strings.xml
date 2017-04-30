@@ -1,0 +1,35 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">FinanceHelper</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>    
+    <string name="settings_delete">Delete</string>
+    <string name="settings_categories">Categories</string>
+    <string name="settings_search">Search</string>
+    <string name="pref_directory">Preferred Directory</string>
+    <string name="pref_currencty_format">Currency</string>
+    <string name="activity_image_trans">test!!</string>
+
+    <string-array name="home_drawer_items">
+        <item></item>
+        <item>Expense Trend</item>
+        <item>Expense Categories</item>
+        <item>Asset Usage</item>
+        <item>Assets</item>
+    </string-array>
+
+    <string name="title_home_activity">Home</string>
+    <string name="title_dashboard_activity">Dashboard</string>
+    <string name="title_expense_new_activity">New Expense</string>
+    <string name="title_expense_edit_activity">Edit Expense</string>
+    <string name="title_expense_view_activity">Expenses</string>
+    <string name="title_expense_cat_activity">Expense Categories</string>
+    <string name="title_expense_sub_cat_activity">Expense Sub Categories</string>
+    <string name="title_asset_view_activity">Assets</string>
+    <string name="title_asset_edit_activity">Edit Asset</string>
+    <string name="title_asset_transfer_activity">Asset Transfer</string>
+    <string name="title_asset_transfer_view_activity">View Transfers</string>
+    <string name="title_activity_expimp_activity">Export/Import</string>
+
+</resources>
+

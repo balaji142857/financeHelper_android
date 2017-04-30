@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    android:padding="5dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/expense_category_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:src="@android:drawable/ic_btn_speak_now"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/expense_category_row_text"
+                android:text="Inter Milan"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+</LinearLayout>

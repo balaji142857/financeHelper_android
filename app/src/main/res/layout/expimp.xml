@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/root_view"
+    tools:context=".activities.io.IOActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+
+
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="Export/Import"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:id="@+id/exp_imp_choooser"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="Start Date"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="date"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/start_date"
+                    android:layout_weight="6"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:id="@+id/start_date_button"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+           <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:text="End Date"/>
+
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:inputType="date"
+                        android:id="@+id/end_date"
+                        android:layout_weight="6"/>
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:id="@+id/end_date_picker"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:layout_weight="2"/>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selected_file_layout"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="File"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/output_file"
+                    android:layout_gravity="center_horizontal" />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/fileChooser"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:src="@drawable/logo_excel_export"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+           <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose target dir/file"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/choose"/>
+
+           <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Exp/Imp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/Start"/>
+
+
+        </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

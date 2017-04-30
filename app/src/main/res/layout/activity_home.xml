@@ -1,0 +1,103 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:background="#ffffffff">
+
+       <!--<ImageView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:src="@drawable/ic_beverages_juice"
+           android:layout_weight="4.5"/>-->
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:gravity="center"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:textStyle="bold"
+           android:text="विदेशेषु धनं विद्या व्यसनेषु धनं मतिः ।\n
+परलोके धनं धर्मः शीलं तु निखिलं धनम् ॥
+\n\n
+In foreign lands knowledge is wealth, in difficult times the intelligence.
+Following dharma here is wealth in afterlife, and good character is wealth anywhere.
+"
+           android:layout_weight="4.5" />
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:layout_height="0dp">
+           <Button
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="Expenses"
+               android:id="@+id/nav_exp"
+               android:drawableLeft="@drawable/logo_expense"
+               style="@style/Widget.AppCompat.Button.Colored"
+               android:layout_height="match_parent" />
+           <!--<Button
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="dummy"
+               android:id="@+id/nav_inc"
+               android:drawableLeft="@drawable/nav_inc"
+               style="@style/Widget.AppCompat.Button.Colored"
+               android:layout_height="match_parent" />-->
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:layout_height="0dp">
+           <Button
+               android:layout_width="0dp"
+               android:text="Assets"
+               android:layout_weight="1"
+               android:id="@+id/nav_asset"
+               android:drawableLeft="@drawable/logo_asset"
+               style="@style/Widget.AppCompat.Button.Colored"
+               android:layout_height="match_parent" />
+           <Button
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="Transfers"
+               android:id="@+id/nav_transfer"
+               android:drawableLeft="@drawable/logo_transfer"
+               style="@style/Widget.AppCompat.Button.Colored"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+       <Button
+           android:layout_width="match_parent"
+           android:text="Import/Export"
+           android:id="@+id/nav_impexp"
+           android:drawableLeft="@drawable/logo_import_export"
+           style="@style/Widget.AppCompat.Button.Colored"
+           android:layout_weight="1"
+           android:layout_height="0dp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/drawer_list"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"
+        />
+    <!--android:background="#ffeeeeee"
+    android:background="@color/primary_light"-->
+</android.support.v4.widget.DrawerLayout>

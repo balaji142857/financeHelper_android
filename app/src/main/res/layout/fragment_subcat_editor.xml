@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_datepicker"
+            android:layout_gravity="center_vertical"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/subCat_imageChooser"
+            android:layout_weight="2"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/subcat_text"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/subcat_save"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Cancel"
+        android:id="@+id/subcat_cancel"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Delete"
+        android:id="@+id/subcat_delete"/>
+</LinearLayout>
